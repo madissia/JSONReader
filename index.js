@@ -6,11 +6,14 @@ const DefaultOptions = {
 
 checkDirectoryExists = (file) =>
 {
-	let directory = /.*(\/|\\)/g.exec(file)
-	if(!directory) // local directory or error
+	let directories = /.*(\/|\\)/g.exec(file
+							.replace('\\', '/')
+							.replace('//', '/')
+						)
+	if(!directories) // local directory or error
 		return
-	if(!fs.existsSync(directory))
-		fs.mkdirSync(directory)
+	if(!fs.existsSync(directories[0]))
+		fs.mkdirSync(directories[0])
 }
 
 class JSONReader
