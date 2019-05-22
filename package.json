@@ -1,10 +1,9 @@
 {
 	"license": "MIT",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"author": "madissia",
 	"name": "@madissia/json-reader",
 	"description": "A simple JSON reader and writer",
-
 	"keywords": [
 		"json",
 		"nodejs",
@@ -14,12 +13,13 @@
 		"writer",
 		"madissia"
 	],
-
 	"main": "index.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/madissia/JSONReader.git"
 	},
 	"homepage": "https://github.com/madissia/JSONReader#readme",
-	"bugs": { "url": "https://github.com/madissia/JSONReader/issues" }
+	"bugs": {
+		"url": "https://github.com/madissia/JSONReader/issues"
+	}
 }
