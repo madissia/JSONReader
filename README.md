@@ -25,3 +25,6 @@ json.timesRead += 1
 // Write changes to file
 json.save()
 ```
+
+## License
+Released under the [MIT License](./LICENSE)
