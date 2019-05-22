@@ -3,12 +3,13 @@ A simple JSON reader and writer
 
 ## Usage
 ```javascript
-/* ./test.json
+// test.json
+/*
 {
 	"timesRead": 0
 }
 */
-const JSONReader = require('json-reader')
+const JSONReader = require('@madissia/json-reader')
 
 // Read JSON file
 let json = JSONReader('test.json')

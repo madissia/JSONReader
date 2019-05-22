@@ -6,7 +6,9 @@ const DefaultOptions = {
 
 checkDirectoryExists = (file) =>
 {
-	let directory = /.*(\/|\\)/g.exec(file)[0]
+	let directory = /.*(\/|\\)/g.exec(file)
+	if(!directory) // local directory or error
+		return
 	if(!fs.existsSync(directory))
 		fs.mkdirSync(directory)
 }
