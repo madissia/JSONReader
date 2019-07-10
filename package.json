@@ -4,6 +4,10 @@
 	"author": "madissia",
 	"name": "@madissia/json-reader",
 	"description": "A simple JSON reader and writer",
+	"scripts": {
+		"run": "sudo node ./index.js",
+		"test": "jest"
+	},
 	"keywords": [
 		"json",
 		"nodejs",
@@ -21,5 +25,8 @@
 	"homepage": "https://github.com/madissia/JSONReader#readme",
 	"bugs": {
 		"url": "https://github.com/madissia/JSONReader/issues"
+	},
+	"devDependencies": {
+		"jest": "^24.8.0"
 	}
 }
